@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <title>Vrina Travling Control</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="/src/styles.css">
+
+
+</head>
+
+<div class="art-wrapper d-flex align-items-stretch">
+  <img src="../../../assets/Images/header.png" alt="" style="width:100%;" />
+
+</div>
+
+<body>
+
+
+  <div class="wrapper d-flex align-items-stretch">
+
+    <nav id="sidebar">
+
+      <div class="custom-menu">
+
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+          <i class="fa fa-bars"></i>
+          <span class="sr-only">Toggle Menu</span>
+        </button>
+      </div>
+
+
+      <div class="p-4 pt-5" >
+          <img src="data:image/jpg;base64,{{myimage2}}" class="img-circle" alt="Users Image" style="width:60px;height: 60px;position: absolute; left: 32%;" />
+
+        <ul class="list-unstyled components mb-5" style="margin-top: 7vw;">
+          <!--- General Setting Menu---------->
+           <li>
+              <a href="Home" style="font-weight: bolder;">{{'Home' | translate }}</a>
+            </li>
+          <li class="active">
+
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" style="font-weight: bolder;">{{'Settings' | translate }}</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                <a href="Users">{{'Add New Users' | translate }}</a>
+              </li>
+              <!-- <li>
+                <a href="GeneralSettings">{{'General Settings' | translate }}</a>
+              </li> -->
+
+
+
+            </ul>
+          </li>
+         
+        </ul>
+
+        <div class="mb-5">
+          <h3 class="h6">Subscribe for newsletter</h3>
+          <form action="#" class="colorlib-subscribe-form">
+            <div class="form-group d-flex">
+              <div class="icon"><span class="icon-paper-plane"></span></div>
+              <input type="text" class="form-control" placeholder="Enter Email Address">
+            </div>
+          </form>
+        </div>
+
+        <div class="footer">
+          <p>
+
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | Vrina 
+            <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" rel="noopener"
+              target="_blank">Colorlib.com</a>
+
+          </p>
+        </div>
+
+      </div>
+    </nav>
+
+  </div>
+  <script src="../../../assets/js/jquery.min.js"></script>
+  <script src="../../../assets/js/popper.js"></script>
+  <script src="../../../assets/js/bootstrap.min.js"></script>
+  <script src="../../../assets/js/main.js"></script>
+</body>
+
+</html>
+

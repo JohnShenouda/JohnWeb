@@ -1,0 +1,44 @@
+<mat-dialog-content>
+  <section class="w3l-hero-headers-11 p-sticky-md">
+    <div class="top-header">
+        <div class="d-grid grid-columns-top-3">
+            <div class="accounts">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="search">
+                <form action="search-results.html" method="get">
+                    <input id="search" name="search" type="text" [(ngModel)]="userid"
+                      placeholder="User Code" >
+                    <label>                      </label>
+                    <input id="search" name="search" type="text" [(ngModel)]="username"
+                     placeholder="User Name"  >
+
+                </form>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <table>
+    <thead>
+        <tr >
+            <th style="width: 30%;">Room Code</th>
+            <th style="width: 100%;">Room Name</th>
+            <th style="width: 20%;">Choose</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let us of usersList; let i = index">
+            <td data-column="User Code">{{us.userid}}</td>
+            <td data-column="User Name">{{us.username}}</td>
+            <td data-column="Choose"><button type="button" class="theme-button btn" name="select" id="select" (click)="SelectUsers(us)">Select</button>
+            </td>
+        </tr>
+
+    </tbody>
+  </table>
+  </mat-dialog-content>
+

@@ -1,0 +1,54 @@
+export class UsersModel{
+    recid = '' ;
+    fullname = '' ;
+    area = '' ;
+    sub_area = '' ;
+    relation = '' ;
+    gender = '' ;
+    service = '' ;
+    floor = '' ;
+    notes = '' ;
+    ser = '' ;
+    married = '' ;
+    tripsattend = '' ;
+    usechair = '' ;
+    needhelp = '' ;
+    sleepwith = '' ;
+    phone = '' ;
+    address = '' ;
+    retardation = '' ;
+    dob = '' ;
+    listening = '' ;
+    seeing = '' ;
+    speaking = '' ;
+    eating = '' ;
+    medicine = '' ;
+    crisis = '' ;
+    healthy = '' ;
+    listen = '' ;
+    speak = '' ;
+    eat = '' ;
+    see = '' ;
+    health = '' ;
+    medicaments = '' ;
+    panic = '' ;
+    age = '' ;
+    retardationreason = '' ;
+    study = '' ;
+    job = '' ;
+    parents = '' ;
+    marital = '' ;
+    confession = '' ;
+    ziina = '' ;
+    entrydate = '' ;
+    hellp = '' ;
+    number_of_hellpers = '' ;
+    groups = '' ;
+    needcar = '' ;
+    userid = '' ;
+    username = '' ;
+    password = '' ;
+    itpicture = '' ;
+    
+
+}

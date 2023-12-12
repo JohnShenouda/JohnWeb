@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users</title>
+</head>
+
+<body>
+
+ 
+
+  <div class="wrapper d-flex align-items-stretch">
+    <div id="content" class="p-4 p-md-5 pt-5">
+      <div class="container">
+        <img style="width: 50%;" src="../../../assets/Images/Home3.jpg" alt="Snow">
+      </div>
+
+      <div class="centered components mb-5" style="background-color:#98bbf0;">
+       
+          <label style="color: white; font-size: larger;"   for="userid">{{ 'User ID' | translate }}</label>
+          <input type="text" id="userid" class="form-control" placeholder="Enter User Name" [(ngModel)]="userid"
+          (change)="retriveUsers($event)">
+          
+
+          <label style="color: white; font-size: larger;" for="password">{{ 'Password' | translate }}</label>
+          <input type="password" id="password" class="form-control" placeholder="Enter Password" [(ngModel)]="acc_password">
+ 
+          <label style="color: white; font-size: larger;" for="language">{{ 'Language' | translate }}</label>
+          <select class="form-control" id="language" name="language" required="" [(ngModel)]="acc_Language"
+            (change)="SetLanguage()">
+            <option value="E">English</option>
+            <option value="A">Arabic </option>
+          </select>
+
+          <div class="example-button-row" *ngIf="!Get_Login">
+            <button type="button" mat-raised-button
+              style="color: #143d7b; font-size: larger; font-weight: bold;" (click)="LoginUser()">
+              {{ 'LogIn to Continue' | translate }}
+            </button>
+          </div>
+       
+        <img style="width: 30%;" src="data:image/jpg;base64,{{myimage0}}" alt="Image">
+      
+        
+      </div>
+     
+    </div>
+ 
+  </div>
+  
+</body>
+
+</html>

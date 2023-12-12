@@ -1,0 +1,97 @@
+<section class="bigan-Bag" style="top: 20%;">
+
+  <label style="text-align: center; background-color:
+  #3399ff;color: #fffffe;font-size: larger; font-weight: bold;font-size: larger;width: 100%;">{{
+  'Users Master Data' | translate }}</label>
+
+  <BR>
+    <div class="example-full-width" >
+      <div class="example-full-width" >
+        <mat-form-field class="example-full-width" appearance="fill"  >
+          <mat-label style="color:rgb(52, 52, 105);font-weight: bold;">{{'Code' | translate}}</mat-label>
+          <input matInput style="color:rgb(52, 52, 105);" maxlength="20ch"  [(ngModel)]="userid" (change)="retriveUsers()" >
+        </mat-form-field>
+        <span class="fa fa-search" aria-hidden="true" style="cursor: grab;" (click)="openDialog()" ></span>
+
+      </div>
+
+
+    <div>
+      <mat-form-field class="example-full-width" appearance="fill" >
+        <mat-label style="color:rgb(52, 52, 105);font-weight: bold;">{{'User Name' | translate}}</mat-label>
+        <input matInput style="color:rgb(52, 52, 105);" maxlength="50ch" [(ngModel)]="fullname">
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field class="example-full-width" appearance="fill" >
+        <mat-label style="color:rgb(52, 52, 105);font-weight: bold;">{{'Password' | translate}}</mat-label>
+        <input matInput  style="color:rgb(52, 52, 105);" maxlength="50ch" [(ngModel)]="password">
+      </mat-form-field>
+    </div>
+
+
+    <div >
+      <mat-form-field appearance="fill"  class="example-full-width">
+        <mat-label class="example-label">{{'User Group' | translate}}</mat-label>
+        <mat-select matNativeControl class="example-label"  [(ngModel)]="area">
+          <mat-option value="فيصل" selected>{{'فيصل' | translate}}</mat-option>
+          <mat-option value="ترسا" selected>{{'ترسا' | translate}}</mat-option>
+          <mat-option value="ايبارشيه الطالبيه والثلاثينى" selected>{{'ايبارشيه الطالبيه والثلاثينى' | translate}}</mat-option>
+          <mat-option value="عام" selected>{{'عام' | translate}}</mat-option>
+          <mat-option value="اغابى" selected>{{'اغابى' | translate}}</mat-option>
+          <mat-option value="داون" selected>{{'داون' | translate}}</mat-option>
+          <mat-option value="تدريب" selected>{{'تدريب' | translate}}</mat-option>
+          <mat-option value="أبونا فلتاؤوس" selected>{{'أبونا فلتاؤوس' | translate}}</mat-option>
+          <mat-option value="ابونا بيشوى كامل" selected>{{'ابونا بيشوى كامل' | translate}}</mat-option>
+          <mat-option value="مسنين" selected>{{'مسنين' | translate}}</mat-option>
+          
+
+        </mat-select>
+      </mat-form-field>
+      <label ></label>
+      <mat-checkbox class="example-margin" [(ngModel)]="married">{{'Active' | translate}}</mat-checkbox>
+      <label ></label>
+    </div>
+  <div >
+      <mat-form-field appearance="fill" style="width: 44%;" class="example-full-width">
+        <mat-label class="example-label">{{'Employee Code' | translate}}</mat-label>
+        <mat-select matNativeControl class="example-label"  [(ngModel)]="sub_area">
+
+          <mat-option value="Item" selected>{{'Item' | translate}}</mat-option>
+          <mat-option value="Bundle" selected>{{'Bundle' | translate}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <label ></label>
+  </div>
+
+
+<div class="styled-input">
+  <label style="font-size: large;font-weight: bold;text-align: center;">
+    {{'Photo' | translate}}</label>
+
+</div>
+<div class="appointment-form-field" style="font-size: large;font-weight: bold;text-align: center;">
+      <input (change)="picked($event)" type="file" id="photo" name="photo"
+          accept="image/*" style="width: 100%;">
+          <img src="data:image/jpg;base64,{{myimage1}}"  alt="Item Image" width="100%" height="400px" style="border: 1px;border-style: double;"/>
+
+        </div>
+
+
+    <BR>
+
+      <form style="text-align: center;">
+
+        <button mat-raised-button style="width:15%;background-color:#18048d;color: #fffffe; height: 50px; font-size: 85%;font-weight: bolder;" (click)="NewData()"
+        >{{'New' | translate}} </button>
+        <label style="width: 1.5%;"></label>
+        <button mat-raised-button style="width:15%;background-color:#0f7b0d;color: #fffffe; height: 50px; font-size: 85%;font-weight: bolder;" (click)="submitUsers()" >
+         {{'Save' | translate}}</button>
+         <label style="width: 1.5%;"></label>
+         <button mat-raised-button style="width:15%;background-color:#ad1608;color: #fffffe; height: 50px; font-size: 85%;font-weight: bolder;" (click)="mesgDelete()"
+        >{{'Delete' | translate}}</button>
+        </form>
+    </div>
+  </section>
+
+
